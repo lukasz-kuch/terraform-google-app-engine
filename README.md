@@ -1,5 +1,3 @@
-![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/lukasz-kuch/terraform-google-app-engine?include_prereleases)
-
 # Terraform App-Engine Module
 
 For App Engine Deployment in GCP
