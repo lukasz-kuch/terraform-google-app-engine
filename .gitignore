@@ -1,2 +1,5 @@
 /regal-fortress-311412-1068a313626d.json
 /terraform.tfvars
+*.zip
+*.terraform
+.terraform.lock.hcl
