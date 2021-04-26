@@ -30,7 +30,7 @@ module "app-engine" {
 
 ## Define an output
 
-Use output block in you configuration file to get output with app DNS name.You could access the value using module.<module-name>.<module-output-name>
+Use output block in you configuration file to get output with app DNS name.You could access the value using module as `module.<module-name>.<module-output-name>`
 
 ```hcl
 output "output" {
