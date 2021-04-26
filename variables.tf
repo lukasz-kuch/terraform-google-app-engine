@@ -17,6 +17,7 @@ variable "project_id" {
 variable "region" {
   default = "europe-west3"
   type = string
+  description = "Region name"
 }
 
 variable "app_source" {
