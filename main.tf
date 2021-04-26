@@ -4,6 +4,10 @@ provider "google" {
   region      = var.region
 }
 
+locals {
+  app_dns = var.app_name != "default" ? "${var.app_name}-dot-${var.project_id}.ey.r.appspot.com" : "${var.project_id}.ey.r.appspot.com"
+}
+
 data"google_compute_network" "network" {
   name = var.network
 }

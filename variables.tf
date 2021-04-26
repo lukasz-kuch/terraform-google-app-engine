@@ -39,5 +39,9 @@ variable "app_version" {
 variable "app_name" {
   type   = string
   default = "default"
+  validation {
+    condition     = length(var.app_name) <= 63 && can(regex("^[A-Za-z0-9-]+$", var.app_name))
+    error_message = "Service name can only consist of letters, numbers ad hyphens, must be max 63 characters long and cannot start or end with a hyphen."
+  }
   description = "The first service (module) you upload to a new application must be the 'default' service (module). Please upload a version of the 'default' service (module) before uploading a version for the 'custom' service (module)"
 }
